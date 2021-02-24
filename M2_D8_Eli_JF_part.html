@@ -9,7 +9,15 @@
 
     <style>
 a {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(109, 107, 107);
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: pink;
+    
 }
 
     </style>
@@ -45,6 +53,30 @@ a {
     </header>
 <br><br>
 <main class="flex-mx-3 px-3 justify-content-between">
+   <h1>Exercise 1</h1>
+   <p>Recreate this table just using Bootstrap4 classes or styling, without adding / removing any DOM element:</p>
+
+   <div class="container d-inline-block">
+    <div class="row">
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-grow-1 bd-highlight bg-success text-white" style="width: 255px;border-top-left-radius:10%;border-bottom-left-radius:10%;border:2px solid black;">green item</div>
+            <div class="p-2 bd-highlight bg-primary text-white" style="border-top:2px solid black;border-bottom: 2px solid black;">blue item</div>
+<!--          <div class="p-2 bd-highlight">Third flex item</div>-->
+
+<div class="d-flex flex-column bd-highlight" style="border-top: 2px solid black; border-bottom: black;border-top-right-radius: 10%;">
+    <div class="p-2 bd-highlight" style="background-color: rgb(253, 253, 143);border-right: black 2px solid;border-top-right-radius: 10%;">item 1</div>
+    <div class="p-2 bd-highlight" style="background-color:rgba(248, 248, 81, 0.966);border-right: black 2px solid;">item 2</div>
+    <div class="p-2 bd-highlight bg-warning text-white" style="border-right: 2px solid black; border-bottom: 2px solid black;border-bottom-right-radius:10%">item 3</div>
+  
+</div>
+  </div>
+  </div>
+</div>
+
+
+<br><br>
+<br><br>
+   
     <h2>Exercise 3</h2>
     <p>And this could be the "video" part of your website! Here you can add all the video content, displayed inside cards.</p>
     <br><br>
@@ -86,7 +118,8 @@ a {
         <div class="card">
           <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Here you can place your video description, in order yo inform the user of what to expect by clicking on the link</p>
+            <p class="card-text justify-content-end text-right"><small class="text-muted justify-content-end">3 mins ago</small></p>
           </div>
           <div class="card-footer">
             <small class="text-muted">3 mins ago</small>
@@ -147,13 +180,13 @@ a {
     
 
 </main>
-
-<footer>
+<br><br>
+<footer class="mx-2 mb-4">
 <h2>Exercise 5</h2>
 <p>Footer time! Never underestimate the power of footers ;-)</p>
 <br><br>
 <hr style="background-color: rgb(216, 215, 215); max-width: 90%;">
-<div class="container ml-3 mr-4 d-flex justify-content-between">
+<div class="container ml-4 mr-4">
     <div class="row">
       <div class="col-sm-4 col-md-4 col-lg-4">
         <h5>Features</h5>
@@ -180,6 +213,7 @@ a {
       </div>
     </div>
   </div>
+
 
 </footer>
 
